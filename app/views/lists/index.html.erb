@@ -1,0 +1,25 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80);">
+  <div class="container">
+    <h1>Save any kind of <strong>Movies</strong></h1>
+    <span id="banner-typed-text"></span>
+  </div>
+</div>
+
+<div class='container mt-5'>
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>My lists</h2>
+    <%= link_to 'Create a new movie list', new_list_path, class: 'btn btn-success' %>
+  </div>
+
+
+
+<div class='cards'>
+  <% @lists.each do |list| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/collection/9542437)">
+      <%= link_to list.name, list_path(list), class: "text-white" %>
+    </div>
+  <% end %>
+</div>
+
+</div>

@@ -10,6 +10,14 @@ import "channels"
 
 import "bootstrap";
 
-Rails.start()
-Turbolinks.start()
-ActiveStorage.start()
+import { loadDynamicBannerText } from "../components/banner";
+
+Rails.start();
+Turbolinks.start();
+ActiveStorage.start();
+
+document.addEventListener("turbolinks:load", () => {
+  // Call your JS functions here
+  // [...]
+  loadDynamicBannerText();
+});

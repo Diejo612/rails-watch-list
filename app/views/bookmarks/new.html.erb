@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Crear un nuevo bookmark</h1>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.association :movie, as: :radio_buttons %>
+    <%= f.input :comment %>
+    <%= f.submit "Create bookmark", class: "btn btn-primary" %>
+  <% end %>
+</div>
