@@ -20,7 +20,7 @@
             <p><%= bookmark.movie.overview %></p>
             <small><%= bookmark.comment %></small>
           </div>
-          <h2 class="card-trip-pricing"><%= link_to 'Borrar', bookmark_path(bookmark), method: :delete %></h2>
+          <%= link_to 'Borrar', bookmark_path(bookmark), method: :delete %>
         </div>
       </div>
     <% end %>
