@@ -11,3 +11,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.hidden {
+  display: none;
+}
+
+.form-bookmark {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}

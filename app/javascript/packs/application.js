@@ -20,4 +20,12 @@ document.addEventListener("turbolinks:load", () => {
   // Call your JS functions here
   // [...]
   loadDynamicBannerText();
+  let bookmarkBtn = document.querySelector("#form-bm")
+  console.log(bookmarkBtn)
+  bookmarkBtn.addEventListener('click', (e) => {
+    let formBookmark = document.querySelector(".form-bookmark");
+    if (formBookmark) {
+      formBookmark.classList.toggle('hidden')
+    }
+  })
 });
